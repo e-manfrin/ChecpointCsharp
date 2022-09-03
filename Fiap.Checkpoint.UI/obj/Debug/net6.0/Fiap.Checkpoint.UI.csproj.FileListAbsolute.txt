@@ -1,0 +1,15 @@
+D:\Área de Trabalho\Projetos\Fiap\2semestre\enterprise\Fiap.Checkpoint\Fiap.Checkpoint.UI\bin\Debug\net6.0\Fiap.Checkpoint.UI.exe
+D:\Área de Trabalho\Projetos\Fiap\2semestre\enterprise\Fiap.Checkpoint\Fiap.Checkpoint.UI\bin\Debug\net6.0\Fiap.Checkpoint.UI.deps.json
+D:\Área de Trabalho\Projetos\Fiap\2semestre\enterprise\Fiap.Checkpoint\Fiap.Checkpoint.UI\bin\Debug\net6.0\Fiap.Checkpoint.UI.runtimeconfig.json
+D:\Área de Trabalho\Projetos\Fiap\2semestre\enterprise\Fiap.Checkpoint\Fiap.Checkpoint.UI\bin\Debug\net6.0\Fiap.Checkpoint.UI.dll
+D:\Área de Trabalho\Projetos\Fiap\2semestre\enterprise\Fiap.Checkpoint\Fiap.Checkpoint.UI\bin\Debug\net6.0\Fiap.Checkpoint.UI.pdb
+D:\Área de Trabalho\Projetos\Fiap\2semestre\enterprise\Fiap.Checkpoint\Fiap.Checkpoint.UI\obj\Debug\net6.0\Fiap.Checkpoint.UI.csproj.AssemblyReference.cache
+D:\Área de Trabalho\Projetos\Fiap\2semestre\enterprise\Fiap.Checkpoint\Fiap.Checkpoint.UI\obj\Debug\net6.0\Fiap.Checkpoint.UI.GeneratedMSBuildEditorConfig.editorconfig
+D:\Área de Trabalho\Projetos\Fiap\2semestre\enterprise\Fiap.Checkpoint\Fiap.Checkpoint.UI\obj\Debug\net6.0\Fiap.Checkpoint.UI.AssemblyInfoInputs.cache
+D:\Área de Trabalho\Projetos\Fiap\2semestre\enterprise\Fiap.Checkpoint\Fiap.Checkpoint.UI\obj\Debug\net6.0\Fiap.Checkpoint.UI.AssemblyInfo.cs
+D:\Área de Trabalho\Projetos\Fiap\2semestre\enterprise\Fiap.Checkpoint\Fiap.Checkpoint.UI\obj\Debug\net6.0\Fiap.Checkpoint.UI.csproj.CoreCompileInputs.cache
+D:\Área de Trabalho\Projetos\Fiap\2semestre\enterprise\Fiap.Checkpoint\Fiap.Checkpoint.UI\obj\Debug\net6.0\Fiap.Checkpoint.UI.dll
+D:\Área de Trabalho\Projetos\Fiap\2semestre\enterprise\Fiap.Checkpoint\Fiap.Checkpoint.UI\obj\Debug\net6.0\refint\Fiap.Checkpoint.UI.dll
+D:\Área de Trabalho\Projetos\Fiap\2semestre\enterprise\Fiap.Checkpoint\Fiap.Checkpoint.UI\obj\Debug\net6.0\Fiap.Checkpoint.UI.pdb
+D:\Área de Trabalho\Projetos\Fiap\2semestre\enterprise\Fiap.Checkpoint\Fiap.Checkpoint.UI\obj\Debug\net6.0\Fiap.Checkpoint.UI.genruntimeconfig.cache
+D:\Área de Trabalho\Projetos\Fiap\2semestre\enterprise\Fiap.Checkpoint\Fiap.Checkpoint.UI\obj\Debug\net6.0\ref\Fiap.Checkpoint.UI.dll
