@@ -9,11 +9,11 @@ namespace Fiap.Checkpoint.UI.Models
 {
     internal class FuncionarioPJ : Funcionario
     {
-        public decimal ValorHora { get; set; }
-        public int QtdHorasCadastrada { get; set; }
+        public double ValorHora { get; set; }
+        public double QtdHorasCadastrada { get; set; }
         public string CnpjDaEmpresa { get; set; }
 
-        public FuncionarioPJ(long id, string nome, GeneroEnum genero, decimal valorHora,
+        public FuncionarioPJ(long id, string nome, GeneroEnum genero, double valorHora,
             int qtdHorasCadastrada, string cnpjDaEmpresa) 
             : base(id,nome, genero)
         {
@@ -21,11 +21,15 @@ namespace Fiap.Checkpoint.UI.Models
             QtdHorasCadastrada = qtdHorasCadastrada;
             CnpjDaEmpresa = cnpjDaEmpresa;
         }
-        public decimal CustoTotalMensalPJ()
+        public void AumentarValorHora(double valorHoraAtualizada)
+        {
+            ValorHora += valorHoraAtualizada;
+        }
+        public double CustoTotalMensalPJ()
         {
             return ValorHora * QtdHorasCadastrada;
         }
-        public decimal CustoTotalMensalPJ(int horasExtras)
+        public double CustoTotalMensalPJ(int horasExtras)
         {
             if(horasExtras < 0)
             {
@@ -38,7 +42,7 @@ namespace Fiap.Checkpoint.UI.Models
         }
         public override string ExibirDados()
         {
-            return $"Nome: {Nome}";
+            return $"Nome: {Nome}, Salário: {ValorHora * QtdHorasCadastrada}";
         }
         public override string ToString()
         {
