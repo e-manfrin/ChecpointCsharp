@@ -22,7 +22,14 @@ namespace Fiap.Checkpoint.UI.Models
         public decimal CustoTotalMensalCLT(double salario)
         {
             var ferias = ((double)11.11 / 100) * salario;
-            return (decimal) ferias;
+            var decimoTerceiro = ((double)8.33 / 100) * salario;
+            var fgts = ((double)8 / 100) * salario;
+            var fgtsProvisaoDeMultaParaRecisao = ((double)4 / 100) * salario;
+            var previdenciario = ((double)7.93 / 100) * salario;
+
+            var salarioBruto = ferias + decimoTerceiro + fgts + fgtsProvisaoDeMultaParaRecisao + previdenciario;
+
+            return (decimal) salarioBruto;
         }
         public override string ExibirDados()
         {
