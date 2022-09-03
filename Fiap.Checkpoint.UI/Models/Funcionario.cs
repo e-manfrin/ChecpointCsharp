@@ -9,10 +9,12 @@ namespace Fiap.Checkpoint.UI.Models
 {
     internal abstract class Funcionario
     {
+        public long Id { get; set; }
         public string Nome { get; set; }
         public GeneroEnum Genero { get; set; }
-        public Funcionario(string nome, GeneroEnum genero)
+        public Funcionario(long id,string nome, GeneroEnum genero)
         {
+            Id = id;
             Nome = nome;
             Genero = genero;
         }

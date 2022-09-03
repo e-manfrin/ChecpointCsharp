@@ -9,16 +9,20 @@ namespace Fiap.Checkpoint.UI.Models
 {
     internal class FuncionarioCLT : Funcionario
     {
-        public int Id { get; set; }
         public decimal Salario { get; set; }
         public bool CargoDeConfianca { get; set; }
 
-        public FuncionarioCLT(string nome, GeneroEnum genero, int id, decimal salario, bool cargoDeConfianca) 
-            : base(nome, genero)
+        public FuncionarioCLT(long id,string nome, GeneroEnum genero, decimal salario, 
+            bool cargoDeConfianca) 
+            : base(id,nome, genero)
         {
-            Id = id;
             Salario = salario;
             CargoDeConfianca = cargoDeConfianca;
+        }
+        public decimal CustoTotalMensalCLT(double salario)
+        {
+            var ferias = ((double)11.11 / 100) * salario;
+            return (decimal) ferias;
         }
         public override string ExibirDados()
         {
