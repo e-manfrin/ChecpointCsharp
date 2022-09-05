@@ -85,7 +85,7 @@ foreach (FuncionarioPJ funcionarioPJ in listaDeFuncionariosPJ)
 {
     valorTotalCustoMensalPJ = valorTotalCustoMensalPJ + funcionarioPJ.CustoTotalMensalPJ();
 }
-    Console.WriteLine("Valor Total do Custo Mensal PJ do funcioário(s): " + valorTotalCustoMensalPJ);
+    Console.WriteLine("Valor Total do Custo Mensal PJ do funcionário(s): " + valorTotalCustoMensalPJ);
 
 Console.WriteLine("Qual é o ID do Funcionário PJ que deseja aumentar o valor hora:");
 long idFuncionarioPJ = Convert.ToInt32(Console.ReadLine());
