@@ -10,6 +10,9 @@ IList<FuncionarioCLT> listaDeFuncionariosCLT = new List<FuncionarioCLT>();
 
 for (int i = 0; i < qtdFuncionarioCLT; i++)
 {
+    Console.WriteLine("Digite o código do funcionario:");
+    int codigo = Convert.ToInt32(Console.ReadLine());
+
     Console.WriteLine("Nome CLT:");
     var nome = Console.ReadLine();
 
@@ -22,7 +25,7 @@ for (int i = 0; i < qtdFuncionarioCLT; i++)
     Console.WriteLine("Cargo de confiança CLT: | true or false");
     bool cargo = Convert.ToBoolean(Console.ReadLine());
 
-    var funcionarioCLT = new FuncionarioCLT(i,nome,genero,salario,cargo);
+    var funcionarioCLT = new FuncionarioCLT(codigo,nome,genero,salario,cargo);
     listaDeFuncionariosCLT.Add(funcionarioCLT);
 }
 
@@ -41,10 +44,9 @@ foreach (FuncionarioCLT funcionarioCLT in listaDeFuncionariosCLT)
 
         funcionarioCLT.Salario = valorDoAumentoSalarioPorPorcentagem;
 
-        Console.WriteLine(funcionarioCLT.ExibirDados());
+        Console.WriteLine(funcionarioCLT.ToString());
     }
 }
-
 
 IList<FuncionarioPJ> listaDeFuncionariosPJ = new List<FuncionarioPJ>();
 
@@ -55,6 +57,9 @@ int qtdFuncionarioPJ = Convert.ToInt32(Console.ReadLine());
 
 for (int i = 0; i < qtdFuncionarioPJ; i++)
 {
+    Console.WriteLine("Digite o código do funcionario:");
+    int codigo = Convert.ToInt32(Console.ReadLine());
+
     Console.WriteLine("Nome PJ:");
     var nome = Console.ReadLine();
 
@@ -70,7 +75,7 @@ for (int i = 0; i < qtdFuncionarioPJ; i++)
     Console.WriteLine("CNPJ da empresa:");
     var cnpjDaEmpresa = Console.ReadLine();
 
-    var funcionarioPJ = new FuncionarioPJ(i, nome, genero,valorHora, qtdHorasCadastradas, cnpjDaEmpresa);
+    var funcionarioPJ = new FuncionarioPJ(codigo, nome, genero,valorHora, qtdHorasCadastradas, cnpjDaEmpresa);
     listaDeFuncionariosPJ.Add(funcionarioPJ);
 }
 
@@ -96,6 +101,31 @@ foreach (FuncionarioPJ funcionarioPJ in listaDeFuncionariosPJ)
 
         Console.WriteLine(funcionarioPJ.CustoTotalMensalPJ());
 
-        Console.WriteLine(funcionarioPJ.ExibirDados());
+        Console.WriteLine(funcionarioPJ.ToString());
+    }
+}
+
+Console.WriteLine("Qual é o ID do Funcionário que deseja exibir todos os dados:");
+long idFuncionarioExibirDados = Convert.ToInt32(Console.ReadLine());
+
+IList<Funcionario> listaDeFuncionarios = new List<Funcionario>();
+
+foreach (FuncionarioCLT funcionarioCLT in listaDeFuncionariosCLT)
+{
+    listaDeFuncionarios.Add(funcionarioCLT);
+}
+
+foreach (FuncionarioPJ funcionarioPJ in listaDeFuncionariosPJ)
+{
+    listaDeFuncionarios.Add(funcionarioPJ);
+}
+
+
+foreach (Funcionario funcionario in listaDeFuncionarios)
+{
+    if (funcionario.Id == idFuncionarioExibirDados)
+    {
+        Console.WriteLine("Dados do Funcionário: " + funcionario.ExibirDados());
+        Console.WriteLine("Custo Total Mensal: " + funcionario.CustoTotalMensal());
     }
 }

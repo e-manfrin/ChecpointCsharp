@@ -32,6 +32,19 @@ namespace Fiap.Checkpoint.UI.Models
             return (decimal) salarioBruto;
         }
 
+        public decimal CustoTotalMensalCLT()
+        {
+            var ferias = ((double)11.11 / 100) * Salario;
+            var decimoTerceiro = ((double)8.33 / 100) * Salario;
+            var fgts = ((double)8 / 100) * Salario;
+            var fgtsProvisaoDeMultaParaRecisao = ((double)4 / 100) * Salario;
+            var previdenciario = ((double)7.93 / 100) * Salario;
+
+            var salarioBruto = ferias + decimoTerceiro + fgts + fgtsProvisaoDeMultaParaRecisao + previdenciario;
+
+            return (decimal)salarioBruto;
+        }
+
         public double ValorAumentarPorPorcentagem(double porcentagem)
         {
             return Salario * ((double)porcentagem / 100 ) + Salario;
@@ -44,6 +57,11 @@ namespace Fiap.Checkpoint.UI.Models
         public override string ToString()
         {
             return base.ToString() + $", ID: {Id}, Carga de confiança: {CargoDeConfianca}";
+        }
+
+        public override string CustoTotalMensal()
+        {
+            return CustoTotalMensalCLT().ToString();
         }
     }
 }

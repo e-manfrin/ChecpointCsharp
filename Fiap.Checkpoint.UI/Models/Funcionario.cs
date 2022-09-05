@@ -19,6 +19,7 @@ namespace Fiap.Checkpoint.UI.Models
             Genero = genero;
         }
         public abstract string ExibirDados();
+        public abstract string CustoTotalMensal();
         public override string ToString()
         {
             return $"Nome: {Nome}, Gênero: {Genero}";

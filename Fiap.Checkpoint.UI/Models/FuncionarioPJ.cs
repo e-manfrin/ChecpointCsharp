@@ -49,5 +49,10 @@ namespace Fiap.Checkpoint.UI.Models
             return base.ToString() + $", ID: {Id}, Valor por hora: {ValorHora}, " +
                 $"Quantidade de horas cadastradas: {QtdHorasCadastrada}, CNPJ: {CnpjDaEmpresa}";
         }
+
+        public override string CustoTotalMensal()
+        {
+            return CustoTotalMensalPJ().ToString();
+        }
     }
 }
