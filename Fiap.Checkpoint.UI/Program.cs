@@ -44,7 +44,7 @@ foreach (FuncionarioCLT funcionarioCLT in listaDeFuncionariosCLT)
 
         funcionarioCLT.Salario = valorDoAumentoSalarioPorPorcentagem;
 
-        Console.WriteLine(funcionarioCLT.ToString());
+        Console.WriteLine("Salário atualizado após aumento por porcentagem: " + valorDoAumentoSalarioPorPorcentagem.ToString());
     }
 }
 
@@ -85,7 +85,7 @@ foreach (FuncionarioPJ funcionarioPJ in listaDeFuncionariosPJ)
 {
     valorTotalCustoMensalPJ = valorTotalCustoMensalPJ + funcionarioPJ.CustoTotalMensalPJ();
 }
-    Console.WriteLine(valorTotalCustoMensalPJ);
+    Console.WriteLine("Valor Total do Custo Mensal PJ do funcioário(s): " + valorTotalCustoMensalPJ);
 
 Console.WriteLine("Qual é o ID do Funcionário PJ que deseja aumentar o valor hora:");
 long idFuncionarioPJ = Convert.ToInt32(Console.ReadLine());
@@ -99,7 +99,7 @@ foreach (FuncionarioPJ funcionarioPJ in listaDeFuncionariosPJ)
     {
         funcionarioPJ.AumentarValorHora(aumentoValorHoraFuncionarioPJ);
 
-        Console.WriteLine(funcionarioPJ.CustoTotalMensalPJ());
+        Console.WriteLine("Valor atualizado do Total do Custo Mensal PJ do funcioário(s): " + funcionarioPJ.CustoTotalMensalPJ());
 
         Console.WriteLine(funcionarioPJ.ToString());
     }
