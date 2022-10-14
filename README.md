@@ -1,3 +1,13 @@
+# Tecnologias: 
+
+<div style="display: inline_block theme=radical" align="center"><br>
+    <img align="center" alt="M-Csharp" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg">
+</div>
+
+Projeto Funcionário CLT ou PJ:
+
+- API C#.
+
 # Desafio 💼
 
 - Desenvolva uma aplicação Console App que possa armazenar em memória os
@@ -36,3 +46,7 @@ a empresa.
 
 - O sistema não deve permitir o cálculo de horas extras ou o aumento do salário
 com valores negativos.
+
+# Linkedin
+
+https://www.linkedin.com/in/emily-keyt-manfrin-9601b489/
